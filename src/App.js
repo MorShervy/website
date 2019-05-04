@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Body from './components/Body';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          mor
-        </p>
-      </header>
+      
+      <div className="Top-background">
+      <Body />
+      </div>
+      <div className="Footer-background">
+
+      </div>
     </div>
   );
 }

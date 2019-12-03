@@ -1,0 +1,414 @@
+$primaryHighlight: #2098D1;
+$secondaryHighlight: #045F8C;
+$tertiaryHighlight: #013A55;
+
+$dark: #222;
+$subtle: #f9f9f9;
+$subtle2: #CCC;
+$subtle3: #f9f9f9;
+
+@import "styles/about";
+@import "styles/reset";
+
+
+
+
+
+
+header[role="banner"] a {
+  color: white;
+}
+
+
+
+header[role="banner"] {
+	background: $primaryHighlight;
+	color: white;
+
+	&:focus {
+		outline: none;
+	}
+
+	.group {
+		position: relative;
+		max-width: 1080px;
+		margin: 0 auto;
+		padding: 20px 20px 0 20px;
+	}
+
+	.logo {
+
+		svg,
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			width: 39px;
+			height: 39px;
+		}
+
+		.circle {
+			// @include prefixed(transition-duration, .3s);
+			// @include prefixed(transition-property, fill);
+		}
+
+		&:focus .circle,
+		&:hover .circle {
+			fill: $secondaryHighlight;
+		}
+	}
+
+	&.menu--open .menu {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+		clear: both;
+		margin-top: 10px;
+		margin-left: -20px;
+		margin-right: -20px;
+		background: #222;
+
+		li {
+			display: block;
+			width: 100%;
+			text-align: center;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			border-bottom: #333 solid 1px;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		.fa-icon {
+			margin-right: 2px;
+		}
+
+		.hire {
+			background: $secondaryHighlight;
+			// @include prefixed(transition-duration, ".3s");
+			// @include prefixed(transition-property, "background");
+
+			&:focus,
+			&:hover {
+				background: $tertiaryHighlight;
+			}
+
+			a:before {
+				content: none;
+			}
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			*display: inline;
+			zoom: 1;
+			width: 100%;
+      padding: 15px 6px;
+			box-sizing: border-box;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			color: #CCC;
+
+			&:focus {
+				outline: 1px white dotted;
+				outline-offset: -1px;
+			}
+
+			&:focus,
+			&:hover {
+				color: white;
+			}
+		}
+
+		.current_page_item a,
+		.current_page_parent a,
+		.current_page_ancestor a,
+		.current-page-item a,
+		.current-page-parent a,
+		.current-page-ancestor a {
+			color: white;
+		}
+
+		.current_page_item a:before,
+		.current_page_parent a:before,
+		.current_page_ancestor a:before,
+		.current-page-item a:before,
+		.current-page-parent a:before,
+		.current-page-ancestor a:before {
+			left: 10px;
+			right: 10px;
+			background: white;
+		}
+	}
+}
+
+@media only screen and (min-width: 981px) {
+	header[role="banner"] .logo svg, 
+	header[role="banner"] .logo img {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+ol, ul {
+  list-style: none;
+}
+
+
+a {
+  color: #045F8C;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.group {
+  zoom: 1;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+header[role="banner"] h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 721px) {
+  header[role="banner"] .logo {
+      display: inline-block;
+      *display: inline;
+      zoom: 1;
+      vertical-align: middle;
+      float: left;
+      padding: 0;
+  }
+}
+
+.logo .logo-name h1 {
+  font-weight: 900;
+}
+
+.logo .logo-name h2 {
+  font-size: .875em;
+}
+
+.logo-name {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+	padding: 7px 0;
+	line-height: 1.4;
+
+	h2 {
+		display: none;
+	}
+}
+
+
+
+
+
+@media only screen and (min-width: 481px) {
+  .logo-name h2 {
+      display: block;
+  }
+}
+
+@media only screen and (min-width: 421px) {
+  .logo-name h2 {
+      display: block;
+  }
+}
+
+
+header[role="banner"] nav, .item, .back-to-top, .note, .subtitle, .date, .posts .title, .right-column, a[rel~="tag"], .footer .links, .intro h1, .intro h2, .intro__list, .intro.front h1, .button, article, .logo-name h1, .logo-name h2, .logos strong, .footer.group, .archives-year, .archives-categories, .shop, .store-nav {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services ul, #pagination, .wpcf7, textarea, .add-comment, .comment-single, .required, input, .blockUI, .nav-archive, .date-and-author, .featured li, #searchform, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header[role="banner"] .menu {
+  font-size: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media only screen and (min-width: 721px) {
+  header[role="banner"] .menu {
+      clear: none;
+      display: block;
+      position: relative;
+      top: 7px;
+      float: right;
+      height: 100%;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      background: none;
+  }
+}
+
+@media only screen and (min-width: 721px){
+  header[role="banner"] .menu ul {
+      width: 100%;
+      display: inline-block;
+    //   display: inline;
+      zoom: 1;
+  }
+}
+
+header[role="banner"] .menu li {
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	border-bottom: #333 solid 1px;
+  }
+
+@media only screen and (min-width: 721px) {
+  header[role="banner"] .menu li {
+      width: auto;
+      max-width: 100%;
+      display: inline-block;
+      zoom: 1;
+      vertical-align: middle;
+      border: none;
+  }
+}
+
+header[role="banner"] .menu a {
+	position: relative;
+	display: inline-block;
+	// *display: inline;
+	zoom: 1;
+	width: 100%;
+	padding: 15px 6px;
+	box-sizing: border-box;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	color: #CCC;
+  }
+
+  header[role="banner"] .menu a {
+	font-size: 14px;
+	font-size: .875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+  }
+
+  @media only screen and (min-width: 721px){
+	header[role="banner"] .menu a {
+		padding: 15px 8px;
+		color: white;
+		font-size: 12px;
+	}
+  }
+
+@media only screen and (min-width: 841px) {
+  header[role="banner"] .menu a {
+      padding: 15px 12px;
+      font-size: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 721px){
+  header[role="banner"] .menu__button {
+      display: none;
+  }
+}
+
+
+
+.menu__button {
+    position: relative;
+    z-index: 2;
+    top: -7px;
+    right: -12px;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    cursor: pointer;
+    width: 52px;
+    height: 52px;
+    float: right;
+    border: none;
+    background: transparent;
+
+
+	&:hover:before {
+		opacity: 0;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:before {
+		z-index: 2;
+		background: url("./images/menu.svg") no-repeat transparent 50% 50%;
+		// @include prefixed(transition-duration, .3s);
+		// @include prefixed(transition-property, opacity);
+	}
+
+	&:after {
+		z-index: 1;
+		background: url("./images/menu-hover.svg") no-repeat transparent 50% 50%;
+	}
+}
+
+
+@media only screen and (min-width: 421px) {
+  .menu__button {
+      top: 2px;
+  }
+}
+
+

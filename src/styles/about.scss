@@ -1,0 +1,174 @@
+
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block;
+  }
+
+
+
+
+  main[role="main"] {
+    padding-bottom: 0;
+    background: white;
+}
+
+
+article {
+    position: relative;
+}
+
+article {
+    margin-top: 0;
+}
+
+
+@media only screen and (min-width: 841px) {
+    article {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    article {
+        margin-top: 0;
+    }
+}
+
+
+
+
+.intro {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 20px 30px 20px;
+    background: #2098D1;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.intro {
+    text-align: center;
+    color: black;
+}
+
+@media only screen and (min-width: 721px) {
+    .intro {
+        padding: 80px 80px 30px 80px;
+    }
+}
+
+
+
+
+
+
+
+
+.intro {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 20px 30px 20px;
+    background: #2098D1;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.intro h1 {
+    font-size: 1.6em;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.intro h1 {
+    max-width: 860px;
+    margin: 0px auto;
+}
+
+.intro h1, .intro h2, .intro .intro__list {
+    line-height: 1.4;
+}
+
+
+
+@media only screen and (min-width: 721px) {
+    .intro h1 {
+        font-size: 2.6em;
+    }
+}
+
+.intro h2 {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+.intro h1, .intro h2, .intro .intro__list {
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 721px) {
+    .intro h2 {
+        font-size: 1.3em;
+    }
+}
+
+
+.content {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 8em;
+    max-width: 720px;
+}
+
+.content {
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media only screen and (min-width: 681px) {
+    .content {
+        font-size: 1em;
+    }
+}
+
+article .content > *:first-child, article .content > *:first-child:empty + * {
+    margin-top: 0;
+}
+
+article .content > * {
+    margin-top: 1.8em;
+}
+
+article .content .alignleft, article .content .alignright {
+    display: block;
+}
+
+article .content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.avatar img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .8em;
+    border: black solid 4px;
+}
+
+@media only screen and (min-width: 481px) {
+    article .alignleft {
+        float: left;
+        margin-right: 1.4em;
+    }
+}

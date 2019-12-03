@@ -1,17 +1,15 @@
 import React from 'react';
-import Body from './components/Body';
-import './App.css';
+import topBackground from './components/TopBackground';
+import About from './pages/About';
+import Header from './components/Header';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      
-      <div className="Top-background">
-      <Body />
-      </div>
-      <div className="Footer-background">
-
-      </div>
+    <div>
+      <Header />
+      <About />
     </div>
   );
 }
